@@ -24,7 +24,7 @@ include ArticlesHelper
    def destroy
       @article = Article.find(params[:id])
       @article.destroy
-      flash.notice = "Article '#{@article.title}' has been deleted"
+      flash.notice = "The Article '#{@article.title}' has been deleted"
       redirect_to articles_path(@article)
    end
    
